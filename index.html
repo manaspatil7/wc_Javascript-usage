@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calculator and List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Java-Script Usage !</h1>
+    </header>
+
+    <main>
+        <!-- Calculator Section -->
+        <section id="calculator">
+            <h2>Simple Calculator</h2>
+            <input type="number" id="num1" placeholder="Number 1">
+            <input type="number" id="num2" placeholder="Number 2">
+            <select id="operation">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+            <button id="calculate">Calculate</button>
+            <p>Result: <span id="result">0</span></p>
+        </section>
+
+        <!-- Form Validation Section -->
+        <section id="form-validation">
+            <h2>Form Validation</h2>
+            <form id="userForm">
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+                <p id="formMessage"></p>
+            </form>
+        </section>
+
+        <!-- Name Greeting Section -->
+        <section id="name-greeting">
+            <h2>Greet Me</h2>
+            <input type="text" id="name" placeholder="Enter your name">
+            <button id="greet">Greet</button>
+            <p id="greetingMessage"></p>
+        </section>
+
+        <!-- Item List Section -->
+        <section id="item-list">
+            <h2>Item List</h2>
+            <input type="number" id="itemCount" placeholder="Number of items">
+            <button id="showItems">Show Items</button>
+            <ul id="items"></ul>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
